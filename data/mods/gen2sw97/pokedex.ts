@@ -1059,6 +1059,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	scizor: {
 		inherit: true,
+		types: ["Bug", "Flying"],
 		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
 		evoType: undefined,
 		evoLevel: 41,
@@ -1071,6 +1072,40 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	houndour: {
 		inherit: true,
+		types: ["Fire"],
 		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+	},
+	houndoom: {
+		inherit: true,
+		types: ["Fire"],
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+	},
+	wolfman: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+	},
+	warwolf: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+	},
+	porygon2: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+	},
+	likk: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		prevo: "Lickitung",
+		evoLevel: 32, 
+	},
+	steelix: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+		evoType: undefined,
+		evoLevel: 38,
 	},
 };
