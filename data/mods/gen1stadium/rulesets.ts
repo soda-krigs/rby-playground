@@ -103,7 +103,7 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 				set.ivs = { hp: 12, atk: 12, def: 10, spa: 12, spd: 12, spe: 10 };
 				set.moves = ['Fly', 'Quick Attack', 'Sand Attack', 'Take Down'];
 				break;
-			case 'Butterfree':
+			case 'Pidgeot':
 				set.evs = { hp: 129, atk: 128, def: 128, spa: 128, spd: 128, spe: 128 };
 				set.ivs = { hp: 10, atk: 8, def: 10, spa: 10, spd: 10, spe: 8 };
 				set.moves = ['Mirror Move', 'Fly', 'Quick Attack', 'Sand Attack'];
@@ -703,17 +703,17 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 				set.ivs = { hp: 12, atk: 12, def: 10, spa: 12, spd: 12, spe: 10 };
 				set.moves = ['Surf', 'Ice Beam', 'Double Edge', 'Double Team'];
 				break;
-			case 'Starmie':
+			case 'Omastar':
 				set.evs = { hp: 113, atk: 112, def: 112, spa: 112, spd: 112, spe: 112 };
 				set.ivs = { hp: 4, atk: 4, def: 4, spa: 4, spd: 4, spe: 6 };
 				set.moves = ['Hydro Pump', 'Submission', 'Spike Cannon', 'Withdraw'];
 				break;
-			case 'Staryu':
+			case 'Kabuto':
 				set.evs = { hp: 145, atk: 144, def: 144, spa: 144, spd: 144, spe: 144 };
 				set.ivs = { hp: 12, atk: 12, def: 10, spa: 12, spd: 12, spe: 10 };
 				set.moves = ['Hydro Pump', 'Blizzard', 'Slash', 'Double Team'];
 				break;
-			case 'Starmie':
+			case 'Kabutops':
 				set.evs = { hp: 113, atk: 112, def: 112, spa: 112, spd: 112, spe: 112 };
 				set.ivs = { hp: 4, atk: 4, def: 4, spa: 4, spd: 4, spe: 6 };
 				set.moves = ['Surf', 'Swords Dance', 'Mega Kick', 'Submission'];
@@ -757,7 +757,6 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 				set.evs = { hp: 97, atk: 96, def: 96, spa: 96, spd: 96, spe: 96 };
 				set.ivs = { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
 				set.moves = ['Slam', 'Dragon Rage', 'Thunder', 'Agility'];
-				break;
 			}
 		},
 	},
