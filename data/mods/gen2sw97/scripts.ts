@@ -453,25 +453,19 @@ export const Scripts: ModdedBattleScriptsData = {
 			let isCrit = move.willCrit || false;
 			if (!isCrit) {
 				// In gen 1, the critical chance is based on speed.
-				// First, we get the base speed, divide it by 2 and floor it. This is our current crit chance.
-				let critChance = Math.floor(this.dex.species.get(source.set.species).baseStats['spe'] / 2);
+				// First, we get the base speed, multiply it by 4 and floor it. This is our current crit chance.
+				let critChance = Math.floor(this.dex.species.get(source.set.species).baseStats['spe'] * 4);
 
 				// Now we check for focus energy volatile.
 				if (!source.volatiles['focusenergy']) {
-					// If it exists, crit chance is divided by 2 again and floored.
-					critChance = Math.floor(critChance / 2);
-				} else {
-					// Normally, without focus energy, crit chance is multiplied by 2 and capped at 255 here.
-					critChance = this.battle.clampIntRange(critChance * 2, 1, 255);
+					// Normally, without focus energy, crit chance is divided by 2 and capped at 255 here.
+					critChance = this.battle.clampIntRange(critChance / 8, 1, 255);
 				}
 
 				// Now we check for the move's critical hit ratio.
 				if (move.critRatio === 1) {
-					// Normal hit ratio, we divide the crit chance by 2 and floor the result again.
-					critChance = Math.floor(critChance / 2);
-				} else if (move.critRatio === 2) {
-					// High crit ratio, we multiply the result so far by 4 and cap it at 255.
-					critChance = this.battle.clampIntRange(critChance * 4, 1, 255);
+					// Normal hit ratio, we divide the crit chance by 4 and floor the result again.
+					critChance = Math.floor(critChance / 4);
 				}
 
 				// Last, we check deppending on ratio if the move critical hits or not.

@@ -429,6 +429,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: { hp: 80, atk: 80, def: 50, spa: 55, spd: 40, spe: 25 },
 		prevo: "Grimey",
+		evoLevel: 19,
 		eggGroups: ["Undiscovered"],
 	},
 	muk: {
@@ -820,6 +821,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Flying", "Psychic"],
 		baseStats: { hp: 55, atk: 50, def: 50, spa: 70, spd: 50, spe: 80 },
+		evoType: "useItem",
+		evoItem: "Heart Stone",
 		eggGroups: ["Undiscovered"],
 	},
 	golppy: {
@@ -1080,15 +1083,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Fire"],
 		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		evoLevel: 35,
 		eggGroups: ["Undiscovered"],
-	},
-	wolfman: {
-		inherit: true,
-		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
-	},
-	warwolf: {
-		inherit: true,
-		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
 	},
 	porygon2: {
 		inherit: true,
@@ -1107,5 +1103,58 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Undiscovered"],
 		evoType: undefined,
 		evoLevel: 38,
+	},
+	kingdra: {
+		inherit: true,
+		types: ["Dragon", "Water"],
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+	},
+	raikou: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 90, def: 85, spa: 125, spd: 98, spe: 100 },
+	},
+	entei: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 100, def: 90, spa: 125, spd: 99, spe: 90 },
+	},
+	suicune: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 85, def: 100, spa: 125, spd: 98, spe: 100 },
+	},
+	sneasel: {
+		inherit: true,
+		types: ["Dark"],
+		baseStats: { hp: 45, atk: 65, def: 50, spa: 40, spd: 50, spe: 85 },
+		eggGroups: ["Undiscovered"],
+	},
+	hooh: {
+		inherit: true,
+		types: ["Flying"],
+		baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 50, spe: 100 },
+	},
+	togepi: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		evos: undefined,
+	},
+	snubull: {
+		inherit: true,
+		baseStats: { hp: 65, atk: 70, def: 60, spa: 70, spd: 50, spe: 50 },
+		evos: undefined,
+		eggGroups: ["Undiscovered"],
+	},
+	aipom: {
+		inherit: true,
+		baseStats: { hp: 55, atk: 55, def: 50, spa: 60, spd: 50, spe: 60 },
+		eggGroups: ["Undiscovered"],
+	},
+	leafeo: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50 },
+		eggGroups: ["Undiscovered"],
+		prevo: "Eevee",
+		evoType: "useItem",
+		evoItem: "Leaf Stone",
 	},
 };
